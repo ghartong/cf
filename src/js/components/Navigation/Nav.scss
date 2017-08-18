@@ -1,0 +1,78 @@
+@import '../../../css/_colors';
+/* Nav CSS */
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+	background-color: $pink;
+	background-position: top left;
+	background-repeat: repeat-y;
+	padding:10px 0 0 0;
+
+	.container{
+		padding:0;
+		width: 100%;
+	}
+	.navbar-collapse{
+		padding:0;
+	}
+	a{
+		color:$pink-lite;
+		font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		white-space: normal;
+	}
+	img{
+		display: none;
+	}
+	ul{
+		float: none;
+	}
+	li{
+		float:none;
+		a{
+			padding: 10px 0 10px 60px;
+		}
+		a:focus{
+			background-color: transparent;
+		}
+		a:hover{
+			background-color: transparent;
+			color: darken($pink-lite, 10%);
+		}
+		a.active{
+			color: darken($pink-lite, 15%);				
+		}
+	}
+	.navbar-toggle{
+		background-color:$slate;
+	}
+	.icon-bar{
+		background-color: $black-ish;
+	}	
+}
+@media (min-width: 768px) {
+	.sidebar {
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+		a.active img{
+			display:inherit;
+			position: absolute;
+			top:-21px;
+			left:-10px;
+		}
+		.nav.navbar-nav{
+			padding-right:5px;
+		}
+		#nav_stamp{
+			display: inherit;	
+			margin-bottom:20px;	
+		}
+	}
+}
+/* End Nav CSS */

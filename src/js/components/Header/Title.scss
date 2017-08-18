@@ -1,0 +1,69 @@
+@import '../../../css/_colors';
+@import '../../../css/_fonts';
+
+/* Title CSS */
+.title{
+	background-image: url('/img/title_bg.png');
+	background-repeat: repeat-x;
+	.logo{
+		height: 185px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 927px;
+		}
+	}
+	.datebar{
+		background-color: $gunmetal;
+		color: lighten($gunmetal, 50%);
+		font-family: 'gothic';
+		text-align: center;
+		text-transform: uppercase;
+		.d0{
+			padding:5px 0;
+		}
+		.d1{
+			color: lighten($gunmetal, 60%);
+			font-size: 20px;
+			font-weight: 500;
+		}
+		.d2{
+			font-size: 18px;
+			padding-right:25px;
+		}
+		.d3{
+			color: lighten($gunmetal, 70%);
+			font-size: 16px;
+			font-weight: 400;
+			padding: 9px 0;
+		}
+	}
+	.vision-logo{
+		float: right;
+		margin:10px 25px 0 0;
+		position: relative;
+		width:209px;
+	}
+}
+@media (min-width: 768px) {
+	.title {
+		.datebar{
+			.d0, .d3{
+				text-align: center;
+			}
+		}
+	}
+}
+@media (min-width: 1000px) {
+	.title {
+		.datebar{
+			.d0{
+				text-align: right;
+			}
+			.d3{
+				text-align: left;
+			}
+		}
+	}
+}
+/* End Title CSS */
